@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine List</title>
+</head>
+<body>
+<h1>Wine List</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>type</th>
+    </tr>
+    {% for wine in wines %}
+    <tr>
+        <td>{{ wine.name }}</td>
+        <td>{{ wine.wine_type }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
