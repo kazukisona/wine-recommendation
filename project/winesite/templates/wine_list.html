@@ -9,11 +9,15 @@
     <tr>
         <th>Name</th>
         <th>type</th>
+        <th>Vintage</th>
+        <th>Country</th>
     </tr>
     {% for wine in wines %}
     <tr>
         <td>{{ wine.name }}</td>
-        <td>{{ wine.wine_type }}</td>
+        <td>{{ wine.type }}</td>
+        <td>{{ wine.vintage }}</td>
+        <td>{{ wine.country }}</td>
     </tr>
     {% endfor %}
 </table>
