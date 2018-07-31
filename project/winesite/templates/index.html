@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
 	<title>Wine Selector</title>
 	<!-- css files -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
     <!-- icons --> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    <!-- font styles --> 
@@ -32,7 +33,7 @@
     	       <div id="content">
 	              <h1 class="bounceHeader"> </h1>
 	             <hr>
-	             <button type="button" class="btn btn-large"><a href="signUp.html">Get Started</a></button>
+	             <a href="{% url 'signup' %}"><button type="button" class="btn btn-large">Get Started</button></a>
                <div class="arrow" style="font-size: 45px; text-align: center; padding-top: 60px;">
                  <i class="fa fa-angle-down" aria-hidden="true"></i>
                </div>
@@ -49,7 +50,7 @@
     
      <div class="row align-right">
       <div data-aos="slide-left"> 
-        <img alt="Explore" height="200px" src="images/landingPage1.jpg">
+        <img alt="Explore" height="200px" src="{% static 'images/landingPage1.jpg' %}">
       </div>
           <div class="box">
              <div data-aos="zoom-in">
@@ -61,7 +62,7 @@
 
       <div class="row align-left">
        <div data-aos="slide-right">
-        <img alt="Taste" height="200px" src="images/landingPage2.jpg">
+        <img alt="Taste" height="200px" src="{% static 'images/landingPage2.jpg' %}">
       </div>
            <div class="box">
              <div data-aos="slide-left"> 
@@ -73,7 +74,7 @@
 
       <div class="row align-right">
          <div data-aos="slide-left"> 
-        <img alt="Learn" height="200px" src="images/landingPage3.jpg">
+        <img alt="Learn" height="200px" src="{% static 'images/landingPage3.jpg' %}">
          </div>
           <div class="box">
             <div data-aos="slide-right">
@@ -90,8 +91,8 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-  <script src="nav.js"></script>
-  <script src="bouncing.js"></script>
+  <script src="{% static 'nav.js' %}"></script>
+  <script src="{% static 'bouncing.js' %}"></script>
  
 
 
