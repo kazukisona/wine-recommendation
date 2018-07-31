@@ -21,6 +21,12 @@ class WineTableListCreate(generics.ListCreateAPIView):
     serializer_class = WineTableSerializer
 
 # templates
+def index(request):
+    return render(request, 'index.html')
+
+def signup(request):
+    return render(request, 'signUp.html')
+
 def wine_list(request):
     wines = WineTable.objects.all()
     return render(request, 'wine_list.html', {'wines': wines})
