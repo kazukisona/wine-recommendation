@@ -1,0 +1,424 @@
+html, body {
+ max-width: 100%; 
+ overflow-x: hidden; 
+ }
+
+
+* {
+  box-sizing: border-box;
+}
+.container a{
+	color: #980000 ;
+	font-size: 20px;
+	
+}
+
+.container a:hover{
+	color:#B80000;
+}
+
+.container{
+	background-color: #F0F0F0;
+	padding: 1.0%;
+	border-bottom: #980000 solid 3px;
+	width: 100%;
+	position: fixed;
+    z-index:1; 
+    top:0;
+	
+    
+
+}
+
+
+ .navbar-toggle {
+   border-color: #ddd;
+
+
+}
+ .navbar-toggle .icon-bar {
+	background-color:#980000;
+}
+
+
+
+ 
+
+.landing{
+  background-image:url('../images/cover3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 8%;
+ 
+  border-bottom: 1.5px solid #980000;
+ 
+
+ 
+
+}
+
+.bounceHeader h1{
+	
+	color:white;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 40px;
+}
+
+
+hr{
+	width:300px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+ #content{
+	text-align: center;
+	padding-top: 25%; /*keep it percentage to make it responsive*/
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+	             0px 8px 13px rgba(0,0,0,0.4),
+	             0px 18px 23px rgba(0,0,0,0.4);
+}
+
+
+  /* General button */
+.btn{
+    color:#980000;
+	background-color: white;
+	margin-left: auto;
+	padding: 10px 20px;
+	border: 2px solid #980000;
+
+}
+
+@media screen and (max-width: 566px) {
+	#content h1{
+		font-size:25px;
+	}
+	#content hr{
+		width:200px;
+	}
+	.bounceHeader{
+		padding-top: 20px;
+	}
+} 
+
+
+a {
+    color: #980000;
+    
+}
+
+a:hover{
+	text-decoration: none;
+	color:#B80000;
+}
+
+/*sign up*/
+
+body.signUpBackground{
+	background-image:url('../images/signUp.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+
+.container-form{
+	background-color: #F0F0F0;
+	margin: 5% 25%;
+	padding-top: 25px;
+	border: 2px solid #980000;
+
+
+}
+
+/*titles of form */ 
+.form-group{
+	text-align: center;
+	line-height: 2;
+	color:#980000;
+}
+
+/*inputs of form */
+.form-control{
+	width: 50%;
+	
+	text-align:center;
+	margin: auto;
+}
+
+
+/* New?  and Sign in labels */
+h3{
+	text-align: center;
+	color:#F0F0F0;
+	font-size:50px;
+	padding-top: 100px;
+
+	font-family: 'Gloria Hallelujah', cursive;
+	letter-spacing: 3px;
+
+}
+
+/*login */
+body.loginBackground{
+	background-image:url('../images/login.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.container-Login_form{
+	background-color: #F0F0F0;
+	margin: 5% 25%;
+	padding-top: 25px;
+	border: 2px solid #980000;
+	
+
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.question h2{
+	/*padding-top: 100px;*/
+	padding-bottom: 20px;
+	text-align: center;
+	color: #980000;
+	font-family: 'Gloria Hallelujah', cursive;
+
+
+}
+
+.question h3{
+	text-align: center;
+	color: #980000;
+
+}
+
+
+#type {
+    margin: auto;
+    margin-left: 25%;
+    border: 2px solid #980000;
+    padding: 10px;
+    display: inline-block;
+}
+
+#type img{
+	margin: 50px
+
+
+}
+
+.arrow .fa{
+	animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+   0%{
+   	transform: translateY(-50px);
+   	text-shadow: 0 20px 0 #fff;
+   }
+   20%{
+   	transform: translateY(0px);
+   	text-shadow: 0 10px 0 #fff;
+   }
+   40%{
+	 transform: translateY(0px);
+	 text-shadow: 0 -10px 0 #fff;
+	}
+
+	60%{
+	  transform: translateY(0px);
+	  text-shadow: 0 0px 0 #fff;
+	 }
+	100%{
+	  transform: translateY(100px);
+	  text-shadow: 0 -50px 0 #fff;
+	}
+
+}
+/* about us */ 
+
+
+
+
+
+.Abt-us .Abt-container .row.align-right img{
+   float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 54%;
+    margin-top: 40px;
+
+}
+.Abt-us .Abt-container .row.align-left img{
+   float: left;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    border-radius: 54%;
+}
+
+.Abt-us .Abt-container .row.align-right .box{
+   
+    width: 50%; 
+    margin: 20px;
+    float: left;
+    padding: 5%;
+    text-align: left;
+}
+
+
+.Abt-us .Abt-container .row.align-left .box {
+  
+    
+    width: 50%;
+    margin: 20px;
+    float: right;
+    padding: 5%;
+    text-align: center;
+}
+
+
+
+ .Abt-container{
+	
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 .809em;
+   
+}
+
+.Abt-us p{
+   font-size: 20px;
+   line-height: 2;
+   font-family: 'Raleway', sans-serif;
+
+}
+.Abt-us h2{
+	font-size: 45px;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    color: #980000;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.row{
+	padding-left:5%;
+	padding-right: 5%;
+}
+
+@media screen and (max-width: 400px){
+  .Abt-us .Abt-container .row.align-right img{
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 54%;
+    margin-top: 40px;
+
+}
+.Abt-us .Abt-container .row.align-left img{
+   float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    border-radius: 54%;
+}
+
+
+
+}
+
+
+/* end of about-us */
+
+
+/* start of selection display page */
+
+
+
+   
+body.background-Select{
+	background-image:url('../images/selection.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+
+ h1{
+	color:black;
+	text-align: center;
+}
+
+.thumbnail{
+	
+	border: 2px solid #99cc00;
+
+	
+
+}
+
+
+/*end of selection display page*/
+
+/*start of selector page*/
+
+.question{
+	text-align: center;
+	
+	border: 2px solid #99cc00;
+	background-color: #F0F0F0;
+	margin-left: 100px;
+	padding: 5px;
+	width: 60%;
+	margin-top: 200px; 
+
+}
+
+.question h2{
+	/*padding-top: 100px;*/
+	padding-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #980000;
+	font-family: 'Gloria Hallelujah', cursive;
+    
+
+}
+
+
+.background-selector{
+	background-image:url('../images/selector.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: auto;
+
+}
+
+.selectorHeading{
+	color: #980000;
+	font-size: 24px;
+	text-align: left;
+	font-weight: bold;
+	margin-top:60px;
+	letter-spacing: 3px;
+	width: 800px;
+	margin-left: 30px;
+}
+
+/*Profile page */
+.info{
+	margin-top: 100px;
+}
+

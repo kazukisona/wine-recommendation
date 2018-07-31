@@ -24,10 +24,10 @@
 
 
   
-  <h3> You're one step closer to finding your wine! </h3>
+  <h3 class="selectorHeading"> You're one step closer to finding your wine! </h3>
   <form action="{% url 'recommendation' %}" method="POST" >
     {% csrf_token %}
-    <div class="question"> 
+    <div data-aos="slide-down" class="question"> 
       <h2> What type of wine do you prefer?</h2>
       <select name="type" class="custom-select-lg">
       
@@ -38,7 +38,7 @@
      </select>
    </div>
 
-   <div class="question"> 
+   <div data-aos="slide-down" class="question"> 
         <h2>  From which location do you prefer your wine to be from?</h2>
        <select name="region" class="custom-select-lg">
           <option selected>Continent </option>
@@ -52,7 +52,7 @@
           <option value="United Kingdom">United Kingdom</option>
        </select>
    </div>
-   <div class="question">
+   <div data-os="slide-down" class="question">
     <h2> Vintage or Non-vintage?</h2>
     <select name="vintage" class="custom-select-lg">
         <option selected>Vintage or Nonvintage </option>
