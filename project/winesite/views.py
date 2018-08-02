@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.db.models import Q
 
 # Create your views here.
@@ -27,6 +27,11 @@ def index(request):
 def signup(request):
     return render(request, 'signUp.html')
 
+
+
+def login(request):
+    return render(request, 'login.html')
+
 def wine_list(request):
     wines = WineTable.objects.all()
     return render(request, 'wine_list.html', {'wines': wines})
@@ -53,6 +58,25 @@ def recommendation(request):
 
 def selector(request):
     return render(request, 'selector.html')
+
+# Create new user from signup.htlm
+# Add user to the user table winesite_user
+def new_user(request):
+    if request.method == "POST":
+        # get values from the sign in form
+
+        firstname = request.POST.get('firstname')
+        lastname = request.POST.get('lastname')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        birthday = request.POST.get('birthday')
+
+        new_user = User(firstname=firstname,lastname=lastname,email=email,password=password,birthday=birthday)
+        new_user.save()
+
+    
+    return redirect('selector')
+
 
 # helper function
 def region_list(region_name):
