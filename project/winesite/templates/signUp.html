@@ -29,31 +29,31 @@
 
 	<div class="container-form">
 
-     <form action="" method="POST">
+     <form action="{% url 'newuser' %}" method="POST"> {% csrf_token %}
         <div class="form-group">
 	       <label for="exampleInputFullName">First Name </label>
-	       <input type="text" class="form-control" name="exampleInputName" placeholder="Enter First Name">
+	       <input type="text" class="form-control" name="firstname" placeholder="Enter First Name">
 	    </div>
   
         <div class="form-group">
 	       <label for="exampleInputFullName">Last Name </label>
-	       <input type="text" class="form-control" id="exampleInputLastName" placeholder="Enter Last Name">
+	       <input type="text" class="form-control" name="lastname" placeholder="Enter Last Name">
 	    </div>
 
 
 	    <div class="form-group">
 	       <label for="exampleInputEmail1">Email address</label>
-	       <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+	       <input type="text" class="form-control" name="email"  placeholder="Enter email">
 	    </div>
 
 	    <div class="form-group">
 	      <label for="exampleInputPassword1">Password</label>
-	      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	      <input type="text" class="form-control" name="password" placeholder="Password">
 	    </div>
 
 	   <div class="form-group">
 	      <label for="exampleInputBirthday">Birthday</label>
-	      <input type="date" class="form-control" id="exampleInputBirthday" placeholder="MM/DD/YY">
+	      <input type="date" class="form-control" name="birthday" placeholder="MM/DD/YY">
 	   </div>
 
 	   <div class="form-group">
