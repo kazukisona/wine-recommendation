@@ -60,7 +60,7 @@ html, body {
 .bounceHeader h1{
 	
 	color:white;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 40px;
 }
 
@@ -93,17 +93,7 @@ hr{
 
 }
 
-@media screen and (max-width: 566px) {
-	#content h1{
-		font-size:25px;
-	}
-	#content hr{
-		width:200px;
-	}
-	.bounceHeader{
-		padding-top: 20px;
-	}
-} 
+
 
 
 a {
@@ -220,7 +210,7 @@ body.loginBackground{
 .arrow .fa{
 	animation: animate 1s linear infinite;
 }
-
+/* arrow in landing page  animation */
 @keyframes animate{
    0%{
    	transform: translateY(-50px);
@@ -246,11 +236,6 @@ body.loginBackground{
 
 }
 /* about us */ 
-
-
-
-
-
 .Abt-us .Abt-container .row.align-right img{
    float: right;
     width: 300px;
@@ -259,7 +244,7 @@ body.loginBackground{
     margin-top: 40px;
 
 }
-.Abt-us .Abt-container .row.align-left img{
+.Abt-us .Abt-container .row.align-left img {
    float: left;
     width: 300px;
     height: 300px;
@@ -316,29 +301,26 @@ body.loginBackground{
 	padding-right: 5%;
 }
 
-@media screen and (max-width: 400px){
-  .Abt-us .Abt-container .row.align-right img{
-    float: right;
-    width: 200px;
-    height: 200px;
-    border-radius: 54%;
-    margin-top: 40px;
 
+
+
+.selectorUnder{
+	width: 200px;
 }
-.Abt-us .Abt-container .row.align-left img{
-   float: left;
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    border-radius: 54%;
+
+.selectorHeading{
+	letter-spacing: 0px;
 }
 
 
-
-}
 
 
 /* end of about-us */
+
+
+
+
+
 
 
 /* start of selection display page */
@@ -358,14 +340,22 @@ body.background-Select{
  h1{
 	color:black;
 	text-align: center;
+
+
 }
 
 .thumbnail{
 	
 	border: 2px solid #99cc00;
+	outline: 5px solid #F0F0F0;
+	margin-bottom: 50px;
 
 	
 
+}
+
+.selectionHeading{
+	padding-bottom: 20px;
 }
 
 
@@ -375,15 +365,28 @@ body.background-Select{
 
 .question{
 	text-align: center;
+	border: 2.5px solid #E9DCB0;
+	background-color: #F8F8F8;
+    margin-top: 10%;
+    margin-left: 9%;
+	padding: 20px;
+	width: 50%;
+    outline: 10px solid white;
+
 	
-	border: 2px solid #99cc00;
-	background-color: #F0F0F0;
-	margin-left: 100px;
-	padding: 5px;
-	width: 60%;
-	margin-top: 200px; 
 
 }
+
+input, button, select, textarea{
+	  color:#980000;
+	  -webkit-appearance: none;
+	  padding: 5px 20px;
+	  text-align: center;
+	  box-shadow: none;
+	  border-color: #980000;
+}
+
+
 
 .question h2{
 	/*padding-top: 100px;*/
@@ -391,7 +394,8 @@ body.background-Select{
 	font-size: 20px;
 	text-align: center;
 	color: #980000;
-	font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Raleway', sans-serif;
+
     
 
 }
@@ -399,26 +403,177 @@ body.background-Select{
 
 .background-selector{
 	background-image:url('../images/selector.jpg');
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	max-width: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
 .selectorHeading{
 	color: #980000;
-	font-size: 24px;
+	font-size: 2.3vw;
 	text-align: left;
-	font-weight: bold;
-	margin-top:60px;
+	margin-top:5%;
 	letter-spacing: 3px;
-	width: 800px;
-	margin-left: 30px;
+	width: 900px;
+	margin-left: 2%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+
 }
 
-/*Profile page */
-.info{
-	margin-top: 100px;
+.questionButton {
+    text-align: center;
+	margin-top: 10%;
+    margin-left: 9%;
+	padding: 40px;
+	width: 50%;
+    
 }
+.questionButton button{
+	padding: 15px 50px;
+}
+
+.selectorUnder{
+	width:500px;
+	margin-left:10%;
+	border-width: 1.5px;
+
+}
+
+@media screen and (max-width: 1000px){
+  .selectorUnder{
+  	width: 300px;
+  }
+}
+
+
+
+/*Profile page */
+
+
+.profileInfo .thumbnail{
+	margin-top: 20px;
+	margin-bottom:20px;
+	max-width:400px;
+	border: 1px solid grey;
+	outline-color: white;
+	margin-left: 55px;
+	color: #E64344;
+}
+
+.profileInfo{
+	background-image: url('../images/profileInfo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+	float:left;
+	padding: 35px;
+	border: 2px solid #99cc00;
+	margin-top:20px;
+	margin-left: 20px;
+}
+
+.profileInfo h4{
+	color: white;
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 50px;
+}
+
+
+
+.CurrentSelections{
+	width: 40%;
+	float:right;
+	background-image: url('../images/currentSelect.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border:2px solid #99cc00;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.CurrentSelections h4{
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	color:#E64344;
+	padding-top: 20px;
+	padding-bottom: 4px;
+}
+.CurrentSelections .thumbnail{
+	padding: 20px;
+	border: 1px solid grey;
+	outline-color: white;
+}
+
+.selectorButton button{
+	
+	margin-left:25%; 
+	margin-bottom: 5%;
+	padding: 5px;
+	background-color: #E64344;
+
+	font-family: 'Raleway', sans-serif;
+	border: 1px solid grey;
+	
+
+}
+
+.selectorButton button:hover{
+	background-color: white;
+	
+
+}
+
+.selectorButton button a{
+	color: white;
+}
+
+.selectorButton button a:hover{
+	color:#E64344;
+}
+
+.ProfileHeading{
+   color:#AEA09D;
+}
+
+/* end of profile page */
+
+
+/*media queries */
+@media screen and (max-width: 566px) {
+	#content h1{
+		font-size:25px;
+	}
+	#content hr{
+		width:200px;
+	}
+	.bounceHeader{
+		padding-top: 20px;
+	}
+} 
+@media screen and (max-width: 770px){
+  hr{
+  	width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .Abt-us .Abt-container .row.align-right img{
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 54%;
+    margin-top: 40px;
+ 
+
+}
+
 
