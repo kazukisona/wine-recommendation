@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Profile</title>
+	<!-- css files -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons --> 
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    
+     <!-- font styles --> 
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
+   
+     <!--  Animate.css-->
+    <link rel="stylesheet"
+ 	 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+ <navbar></navbar>
+
+
+<h3 class="ProfileHeading"> Profile</h3>
+   <hr>
+
+  <div class="profileInfo"> 
+      <h4> Personal Info</h4>
+       <hr>
+      <div class="thumbnail">
+          <strong> First Name: </strong>
+          <span id="firstName"> </span>
+      </div>
+
+      <div class="thumbnail">
+          <strong> Last Name:</strong>
+          <span id="lastName"> </span>
+     </div>
+     <div class="thumbnail">
+          <strong> Email: </strong>
+          <span id="email"> </span>
+     </div>
+    
+     <div class="thumbnail">
+        <strong> Birthday: </strong> 
+        <span id="birth"> </span>
+    </div>
+
+  </div>
+ 
+
+  <div class="CurrentSelections">
+     <h4> Current Selections</h4>
+     <hr>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+              <span id="wine1"> </span>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+              <span id="wine2"> </span>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <span id="wine3"> </span> 
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+             <span id="wine4"> </span>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+              <span id="wine5"> </span>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+             <span id="wine6"> </span>
+        </div>
+      </div>
+
+      <div class="selectorButton">
+          <button><a href="selector.html"><a href="selector.html">Want't to taste something different?</a> </button>
+     </div>
+          
+  </div>
+
+  
+
+
+
+
+  <!-- Javascript files  --> 
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <script src="navbar.js"></script>
+  <script src="bouncing.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 100,
+    });
+  </script>
+</body>
+</html>
