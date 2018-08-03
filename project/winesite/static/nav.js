@@ -24,7 +24,7 @@ function NavBar() {
         ),
         React.createElement(
          "a",
-          { href: "index.html", className: "navbar-brand" },
+          { href: "/", className: "navbar-brand" },
           " ",
           React.createElement("i", { className: " fas fa-wine-glass" }),
           "  Wine Selector"
@@ -42,7 +42,7 @@ function NavBar() {
             " ",
             React.createElement(
               "a",
-              { href: "signUp.html" },
+              { href: "signup" },
               " Sign up "
             )
           ),
@@ -52,7 +52,7 @@ function NavBar() {
             " ",
             React.createElement(
               "a",
-              { href: "login.html" },
+              { href: "login" },
               "  Login    "
             )
           )
