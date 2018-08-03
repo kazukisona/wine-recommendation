@@ -27,8 +27,6 @@ def index(request):
 def signup(request):
     return render(request, 'signUp.html')
 
-
-
 def login(request):
     return render(request, 'login.html')
 
@@ -54,7 +52,7 @@ def recommendation(request):
                                       .filter(vintage=vintage)
                                       .filter(country__in=region_list(region)))
 
-    return render(request, 'recommendation.html', {'wines': wines})
+    return render(request, 'selections.html', {'wines': wines})
 
 def selector(request):
     return render(request, 'selector.html')
