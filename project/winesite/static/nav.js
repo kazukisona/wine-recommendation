@@ -42,7 +42,7 @@ function NavBar() {
             " ",
             React.createElement(
               "a",
-              { href: "signup" },
+              { href: "../signup" },
               " Sign up "
             )
           ),
@@ -52,7 +52,7 @@ function NavBar() {
             " ",
             React.createElement(
               "a",
-              { href: "login" },
+              { href: "../login" },
               "  Login    "
             )
           )

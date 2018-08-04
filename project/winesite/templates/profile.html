@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
 	<title>Your Profile</title>
 	<!-- css files -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
     <!-- icons --> 
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">    
@@ -93,22 +94,17 @@
       </div>
 
       <div class="selectorButton">
-          <button><a href="selector.html"><a href="selector.html">Want't to taste something different?</a> </button>
+          <button><a href="selector.html"><a href="{% url 'selector' %}">Want't to taste something different?</a> </button>
      </div>
           
   </div>
-
-  
-
-
-
 
   <!-- Javascript files  --> 
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-  <script src="navbar.js"></script>
-  <script src="bouncing.js"></script>
+  <script src="{% static 'navbar.js' %}"></script>
+  <script src="{% static 'bouncing.js' %}"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
