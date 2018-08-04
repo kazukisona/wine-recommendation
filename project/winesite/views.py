@@ -42,7 +42,7 @@ def recommendation(request):
         vintage = request.POST.getlist('vintage')[0]
 
         # filter wines based on the answers
-        # if wine is non-vintage
+        # if wine is vintage
         if vintage != 'nv':
             wines = (WineTable.objects.exclude(vintage='nv')
                                       .filter(type=w_type)

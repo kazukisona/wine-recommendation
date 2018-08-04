@@ -4,3 +4,8 @@ __pycache__/
 # ignore .DS_Store file
 .DS_Store
 
+# ignore .ipynb and .csv
+
+*.ipynb
+
+*.csv
