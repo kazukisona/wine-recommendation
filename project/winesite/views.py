@@ -30,10 +30,6 @@ def signup(request):
 def login(request):
     return render(request, 'login.html')
 
-def wine_list(request):
-    wines = WineTable.objects.all()
-    return render(request, 'wine_list.html', {'wines': wines})
-
 def recommendation(request):
     if request.method == "POST":
         # get values from form
