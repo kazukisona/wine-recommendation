@@ -22,7 +22,7 @@ function NavBar() {
         ),
         React.createElement(
          "a",
-          { href: "index.html", className: "navbar-brand" },
+          { href: "/", className: "navbar-brand" },
           " ",
           React.createElement("i", { className: " fas fa-wine-glass" }),
           "  Wine Selector"
@@ -34,14 +34,23 @@ function NavBar() {
         React.createElement(
           "ul",
           { className: "nav navbar-nav navbar-right" },
-          
           React.createElement(
             "li",
             null,
             " ",
             React.createElement(
               "a",
-              { href: "index.html" },
+              { href: "../profile" },
+              " Profile "
+            )
+          ),
+          React.createElement(
+            "li",
+            null,
+            " ",
+            React.createElement(
+              "a",
+              { href: "../index" },
               "  Log Out    "
             )
           )
