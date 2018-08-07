@@ -78,11 +78,11 @@ def user_auth(request):
         # get values from login form and authenticate with database
 
         email = request.POST.get('exampleInputEmail1')
-        pw = request.POST.get('exampleInputPassword1')
-        user = User.objects.filter(email=email).filter(password=pw)
-
-        if user is not None:
-            return render(request, 'profile.html')       
+        password = request.POST.get('exampleInputPassword1')
+        user = User.objects.filter(email=email).filter(password=password)
+        
+        if user is not None: 
+            return render(request, 'profile.html')      
 
     return redirect('login') 
 
