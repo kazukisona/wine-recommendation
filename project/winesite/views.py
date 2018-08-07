@@ -5,6 +5,7 @@ from django.db.models import Q
 from winesite.models import Wine, User, WineTable
 from winesite.serializers import WineSerializer, UserSerializer, WineTableSerializer
 from rest_framework import generics
+from django.contrib.auth import authenticate
 
 # Create your views here.
 # Serializer
@@ -70,6 +71,21 @@ def new_user(request):
 
     
     return redirect('selector')
+
+def user_auth(request):
+    if request.method == "POST":
+
+        # get values from login form and authenticate with database
+
+        email = request.POST.get('exampleInputEmail1')
+        pw = request.POST.get('exampleInputPassword1')
+        user = User.objects.filter(email=email).filter(password=pw)
+
+        if user is not None:
+            return render(request, 'profile.html')       
+
+    return redirect('login') 
+
 
 
 # helper function

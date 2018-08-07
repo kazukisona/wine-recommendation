@@ -28,19 +28,19 @@
     <h3> Sign in </h3>
 
 	<div class="container-Login_form">
-       <form>
+       <form action="{% url 'auth' %}" method="POST"> {% csrf_token %}
          <div class="form-group">
 	    	<label for="exampleInputEmail1">Email address</label>
-	    	<input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+	    	<input type="email" class="form-control" name="exampleInputEmail1"  placeholder="Enter email">
 	     </div>
 
 	  	 <div class="form-group">
 	    	<label for="exampleInputPassword1">Password</label>
-	    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	    	<input type="password" class="form-control" name="exampleInputPassword1" placeholder="Password">
 	  	 </div>
 
 	  	 <div class="form-group">
-	  		<button type="Register" class="btn btn-large"><a href="profile.html"> Register</a></button>
+	  		<button type="SignIn" class="btn btn-large"><a href="{% url 'auth' %}"> Sign In</a></button>
 	  	 </div>
 
 	  	 <div class="form-group">
