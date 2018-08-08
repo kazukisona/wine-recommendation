@@ -477,7 +477,7 @@ input, button, select, textarea{
 }
 
 .profileInfo h4{
-	color: white;
+	color: #99cc00;
 	text-align: center;
 	letter-spacing: 3px;
 	font-family: 'Gloria Hallelujah', cursive;
@@ -577,4 +577,7 @@ input, button, select, textarea{
 
 }
 
+#firstName, #lastName, #email, #birth{
+	color:grey;
+}
 
