@@ -79,10 +79,14 @@ def user_auth(request):
 
         email = request.POST.get('exampleInputEmail1')
         password = request.POST.get('exampleInputPassword1')
-        user = User.objects.filter(email=email).filter(password=password)
-        
-        if user is not None: 
-            return render(request, 'profile.html')      
+
+        try:
+            user = User.objects.get(email=email)
+            if user is not None and user.password==password: 
+                return render(request, 'profile.html', {'user':user})
+        except:
+            return redirect('login')
+
 
     return redirect('login') 
 
