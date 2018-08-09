@@ -43,11 +43,11 @@ def recommendation(request):
         if vintage != 'nv':
             wines = (WineTable.objects.exclude(vintage='nv')
                                       .filter(type=w_type)
-                                      .filter(country__in=region_list(region)))
+                                      .filter(country__in=region_list(region))[0:6])
         else:
             wines = (WineTable.objects.filter(type=w_type)
                                       .filter(vintage=vintage)
-                                      .filter(country__in=region_list(region)))
+                                      .filter(country__in=region_list(region))[0:6])
 
     return render(request, 'selections.html', {'wines': wines})
 
