@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'yoursecretkey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.ccav2acaer.us-east-1.elasticbeanstalk.com', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -83,19 +83,7 @@ DATABASES = {
     }
 }
 """
-if 'RDS_DB_NAME' in os.environ:     
-     DATABASES = {         
-         'default': {             
-            'ENGINE': 'django.db.backends.mysql',              
-            'NAME': os.environ['RDS_DB_NAME'],             
-            'USER': os.environ['RDS_USERNAME'],             
-            'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': os.environ['RDS_HOSTNAME'],             
-            'PORT': os.environ['RDS_PORT'],         
-         }     
-     } 
-else: 
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'dbname',
@@ -104,7 +92,7 @@ else:
             'HOST': '5432',
             'PORT': '5432',
         }
-    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
