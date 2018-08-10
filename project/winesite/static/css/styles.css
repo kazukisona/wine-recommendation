@@ -465,7 +465,7 @@ input, button, select, textarea{
 }
 
 .profileInfo{
-	background-image: url('../images/profileInfo.jpg');
+	background-image: url('../images/profileinfo.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
