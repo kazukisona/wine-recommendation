@@ -469,15 +469,22 @@ input, button, select, textarea{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
-	float:left;
+	
 	padding: 35px;
 	border: 2px solid #99cc00;
 	margin-top:20px;
-	margin-left: 20px;
+	margin-left:25%;
+   
+    left:50%;
+ 
+}
+
+.profileInfo strong{
+	color:grey;
 }
 
 .profileInfo h4{
-	color: #99cc00;
+	color: #99cc00 ;
 	text-align: center;
 	letter-spacing: 3px;
 	font-family: 'Gloria Hallelujah', cursive;
@@ -489,7 +496,7 @@ input, button, select, textarea{
 
 
 .CurrentSelections{
-	width: 40%;
+	max-width: 40%;
 	float:right;
 	background-image: url('../images/currentSelect.jpg');
 	background-size: cover;
@@ -577,7 +584,5 @@ input, button, select, textarea{
 
 }
 
-#firstName, #lastName, #email, #birth{
-	color:grey;
-}
+
 
